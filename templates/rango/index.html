@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +14,8 @@
   <strong>{{ boldmessage }}</strong><br/>
 </div>
 <div>
-  <a href="rango/about/">About</a><br/>
+    <a href="rango/about/">About</a><br/>
+    <img src="{% static 'images/trees.jpg' %}" alt="Picture of Rango" />
 </div>
 
 
