@@ -2,6 +2,9 @@
 {% load static %}
 
 {% block title_block %}
+    {{ category.name }}
+{% endblock %}
+{% block title_block %}
     {% if category %}
         {{ category.name }}
     {% else %}
