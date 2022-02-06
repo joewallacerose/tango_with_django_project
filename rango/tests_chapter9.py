@@ -375,6 +375,7 @@ class Chapter9LoginTests(TestCase):
         self.client.login(username='testuser', password='testabc123')
         
         content = self.client.get(reverse('rango:index')).content.decode()
+        print(content)
         self.assertTrue('howdy testuser!' in content, f"{FAILURE_HEADER}After logging a user, we didn't see the expected message welcoming them on the homepage. Check your index.html template.{FAILURE_FOOTER}")
 
 
